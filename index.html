@@ -77,19 +77,13 @@
 </head>
 <body>
   <!-- Video background element -->
-  <video id="bgVideo" autoplay loop muted playsinline>
-    <source src="Documents/my-video.mp4" type="video/mp4">
+  <video id="bgVideo" autoplay loop playsinline>
+    <source src="https://github.com/yourusername/aditisballs.github.io/raw/main/my-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
-  <!-- Audio element -->
-  <audio id="bgAudio" loop>
-    <source src="Documents/my-audio.mp3" type="audio/mp3">
-    Your browser does not support the audio tag.
-  </audio>
-
   <!-- Image element -->
-  <img src="Documents/balls.jpg" alt="A cool image" id="animatedImage" />
+  <img src="https://github.com/yourusername/aditisballs.github.io/raw/main/balls.jpg" alt="A cool image" id="animatedImage" />
 
   <!-- Content goes here -->
   <div class="content">
@@ -104,7 +98,6 @@
 
   <script>
     const img = document.getElementById('animatedImage');
-    const audio = document.getElementById('bgAudio');
     
     // Image click animation
     document.addEventListener('click', function(e) {
@@ -131,11 +124,6 @@
       setTimeout(() => {
         img.style.opacity = '0'; // Make the image disappear after a second
       }, 1000); // Image disappears after 1 second (1000ms)
-
-      // Play the audio when clicked
-      if (audio.paused) {
-        audio.play(); // Play the audio if it's paused
-      }
     });
   </script>
 </body>
